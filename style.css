@@ -1,49 +1,263 @@
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+
+}
+
+/*------------------------ Header and Banner Section Styles------------------------  */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(images/donation9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
 }
 
 .primary-btn {
-    background: #FF5959;
-    color: #fff;
-    padding: 12px 16px;
-    border: 0;
+    width: 160px;
+    padding: 16px 12px;
     border-radius: 5px;
+    background: #FF5959;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    color: #fff;
+    margin-top: 30px;
 }
 
-p {
+.primary-text {
+    margin-top: 30px;
     color: #707070;
-    font-family: Poppins;
     font-size: 18px;
-    font-weight: 400;
 }
 
-/* --------- Top Banner Section Styles------------ */
-/* header{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50, -50);
-} */
-
-
-.top-banner {
-    /* background-image: url(images/donation1.jpg); */
-    background-repeat: no-repeat;
-    /* position: absolute; */
+.top-banner-info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.banner-info {
-    width: 826px;
+    color: #fff;
 }
 
 .banner-title {
     font-size: 65px;
+}
+
+.banner-descip {
+    margin-top: 30px;
+}
+
+
+
+/* ------------------- Donate Amount Section Styles------------------ */
+.donate-section {
+    text-align: center;
+    margin: 0 auto;
+    width: 507px;
+}
+
+.section-title {
+    margin-top: 130px;
+    color: #121212;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.amounts {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin: 50px 0 50px 0;
+}
+
+.amount {
+    color: #707070;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 43px 23px 43px 23px;
+    /* border-radius: 5px; */
+}
+
+.amount:hover {
+    border: 1px solid #FF5959;
+    border-radius: 5px;
+    color: #FF5959;
+    background: #FEE;
+
+}
+
+.input {
+    color: #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #B3B3B3;
+    padding: 0 200px 10px 200px;
+    text-align: center;
+    /* border: 1px solid red; */
+
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+input {
+    width: 100%;
+    flex: 1;
+}
+
+
+/* ------------------------ Donate Plan sections------------------------ */
+.plan-section {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 691px;
+    margin: 0 auto;
+}
+
+.donate-items {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+
+}
+
+.item {
+    margin: 50px 0 110px 0;
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding: 64px 22px 54px 22px;
+}
+
+.image-1 {
+    background: rgba(79, 157, 166, 0.10);
+}
+
+.image-2 {
+    background: rgba(255, 89, 89, 0.10);
+}
+
+.image-3 {
+    background: #FFF4D6;
+}
+
+.item img {
+    width: 58.132px;
+    height: 49.772px;
+    flex-shrink: 0;
+}
+
+.item h3 {
+    color: #121212;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 32px;
+}
+
+.item p {
+    width: 315px;
+    height: 101px;
+    flex-shrink: 0;
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+
+/* --------------------------------------- Motivate section--------------------------------------- */
+.motivate-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 94px;
+    margin-bottom: 120px;
+
+}
+
+.motivate-info {
+    width: 492px;
+
+
+}
+
+.motivate-section-1 img {
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.motivate-info button {
+    width: 230px;
+    padding: 16px 12px;
+
+}
+
+
+
+/* ---------------------------------- Update Section------------------- */
+.update-section {
+    text-align: center;
+    width: 809px;
+    margin: 0 auto;
+}
+
+.email {
+    padding: 76px 0;
+    background-color: #eacd74;
+    border-radius: 0 20px;
+    margin-bottom: 130px;
+}
+
+
+.email button {
+    background-color: #FF5959;
+    padding: 14px 43px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 0 30px 30px 0px;
+    color: #fff;
+    border: 0;
+}
+
+
+.email-1 {
+    background-color: #D9D9D9;
+    padding: 14px 43px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    color: #6a6a6a;
+    border: 0;
+    outline: 0;
+}
+
+
+/* ---------------------------------- Footer section styles---------------------------------- */
+footer{
+    padding: 40px 0;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+footer h2{
+    color: #FF5959;
+    font-family: Lobster;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
 }
